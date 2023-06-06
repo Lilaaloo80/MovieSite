@@ -1,0 +1,158 @@
+/* styles.css */
+
+/* Login page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #242424;
+    color: white;
+    text-align: center;
+
+}
+
+.error.login {
+    color: #f00;
+    margin-top: 5px;
+}
+
+
+/* Movie collection page styles */
+body.movie-collection {
+    font-family: Arial, sans-serif;
+    background-color: #0A0708;
+    color: white;
+}
+
+.container-movie-collection {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px none #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1.movie-collection {
+    text-align: center;
+}
+
+.movie-posters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+.movie-poster {
+    width: 200px;
+    height: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.movie-poster:hover {
+    transform: scale(1.05);
+}
+
+.movie-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-name {
+    display: none;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.movie-poster:hover .movie-name {
+    display: block;
+}
+
+/* Video player page styles */
+body.video-player {
+    font-family: Arial, sans-serif;
+    background-color: #0A0708;
+    color: white;
+}
+
+.container-video-player {
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px none #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1.video-player {
+    text-align: center;
+}
+
+.movie-name {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button button {
+    padding: 10px 80px;
+    background-color: #460b68;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#searchInput {
+    border: none;
+    background-color: #f5f5f5;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    width: 300px;
+    border-radius: 5px;
+  }
+  
+  #searchInput:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #searchResults {
+    list-style-type: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 0;
+    width: 300px;
+    display: none;
+  }
+  
+  #searchResults li {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #searchResults li:hover {
+    background-color: #f0f0f0;
+  }
